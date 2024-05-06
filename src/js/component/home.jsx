@@ -7,7 +7,7 @@ const Home = () => {
 	const [toDos, setToDos] = useState([]);
 	fetch('https://redesigned-space-xylophone-wgwr6w455pjh5wg9-3000.app.github.dev/', {
 		method: "PUT",
-		body: JSON.stringify(toDos),
+		body: JSON.stringify(inputValue),
 		headers: {
 		  "Content-Type": "application/json"
 		}
